@@ -1,0 +1,136 @@
+/* LOVE STYLES */
+body {
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0; 
+    height: inherit;
+    animation: slideshow 30s infinite;
+    overflow: hidden;
+    content: '';
+    background-position: center;
+    background-size: cover;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url('love\ 1.jpg');
+    }
+    5% {
+        background-image: url('love\ 2.jpg');
+    }
+    10% {
+        background-image: url('love\ 3.webp');
+    }
+    15% {
+        background-image: url('love\ 4.webp');
+    }
+    20% {
+        background-image: url('love\ 5.webp');
+    }
+    25% {
+        background-image: url('love\ 6.webp');
+    }
+    30% {
+        background-image: url('love\ 7.webp');
+    }
+    35% {
+        background-image: url('love\ 8.webp');
+    }
+    40% {
+        background-image: url('love\ 9.webp');
+    }
+    45% {
+        background-image: url('love\ 10.webp');
+    }
+    50% {
+        background-image: url('love\ 11.webp');
+    }
+    55% {
+        background-image: url('love\ 12.webp');
+    }
+    60% {
+        background-image: url('love\ 13.webp');
+    }
+    65% {
+        background-image: url('love\ 14.webp');
+    }
+    70% {
+        background-image: url('love\ 15.webp');
+    }
+    75% {
+        background-image: url('love\ 16.webp');
+    }
+    80% {
+        background-image: url('love\ 17.webp');
+    }
+    85% {
+        background-image: url('love\ 18.webp');
+    }
+    90% {
+        background-image: url('love\ 19.webp');
+    }
+    95% {
+        background-image: url('love\ 20.webp');
+    }
+    100% {
+        background-image: url('love\ 21.webp');
+    }
+} 
+html, body{
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+@media(max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .flex-box {
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.letter{
+    width: 800px;
+    height: 500px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 3px double;
+    border-style: double;
+    border-color: blue;
+    opacity: 0.7;
+}
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100px;
+    }
+
+    button:hover {
+      background-color: aquamarine;
+    }
+    .cl-button {
+    background-color: #245730;
+      color: white;
+      cursor: pointer;
+      transition: 1.3s;
+      width: 100px;
+    }
+    .cl-button:hover{
+        background-image: linear-gradient(to right, red,orange,yellow);
+    }

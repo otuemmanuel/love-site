@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin">
+    <title>I ❤️ U</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="letter">
+        <head>I LOVE YOU EVERY BEAT OF THE DAY💕💕💕
+                <audio id="bg-music"></audio>
+            <button style="border-radius: 5px;width: 120px;height: 30px;float: right;color: white;text-decoration: none;font-size: 15px;" class="cl-button" id="play-btn" onclick="toggleMusic()">Play Music</button>
+        </head>
+        <hr style="border: 1px solid;border-color: red;">
+        <p style="font-size: larger;text-align: center;">
+            "Oh, my exquisite princess🌟"
+            As Pheobus' chariot dethrones the dying year, and nigh's dark veil doth slowly lift to greet the newborn 
+            dawn, my thoughts do stray to thee 🐼. Thou art the star tthat illuminates my firmament, the gentle breeze that doth whisper sweet nothings to my soul, and the sweet melody that doth harmonize the discordant notes of life 💫.
+            In thy prescence, I find my heart true rhythm, my thoughts find solace, and my spirit finds its wings to soar 🌠. Our love is a waltz of souls, a tender dance of hearts, where words are but whispers, and silence speaks volumes 🔑.
+            Thou art my North Star, my guiding light in life's tempests, and my haven in the stormy seas 🌊.
+            This fledging year, like a newborn babe, doth stretch its tiny hands, eager to unfold its secrets,and beckon us to partake in its grand adventure 🎨.Methinks, fair love, 'tis thou who shalt be my partner in this wildering maze, my co-conspirator
+            in mirth, and my steadfast anchor in life's trials 💖. 
+            Together, let us chase the golden sunsets, savor life's sweet delicacies, and dancein the rain's silvery kiss, as we weave a tapestry of memories that shall warm our hearts for all eternity ⏳. 
+        </p>
+        <p style="margin-bottom: 0px;"><b>"As the stars align in the night sky, my heart beats in sync with yours'. Here's to us, to love and to the adventures that await 🌟. Cheers to a sparkling new year, filled with love, laughter, and magic 🎄🍾🥂.</b></p>
+        <p style="font-size: x-large;float: right;margin-top: 10px;"><b>Yours always 😘</b></p>
+        <p style="margin-top: 70px;margin-left: 250px;"> &copy; copyright WORDS OF SHAKESPEARE</p>
+    </div>
+    <script>
+        const songs = ['Ed Sheeran - Perfect (Official Music Video) - Ed Sheeran.mp3', 'Arcade - Duncan Laurence.mp3', 'maroon-5-girls-like-you-ft-cardi-b-official-music-video.mp3', 'Train - Marry Me (Lyrics).mp3', 'DJ_Snake_-_Let_Me_Love_You_ft._Justin_Bieber(256k).mp3', 'Taylor Swift - Love Story (Lyrics).mp3', 'The Neighbourhood - Sweater Weather.mp3'];
+        const audio = document.getElementById('bg-music');
+        let currentSong = 0;
+        let isplaying = false;
+        audio.src = songs[currentSong];
+        audio.addEventListener('ended', () => {
+            currentSong = (currentSong + 1) % songs.length;
+            audio.src = songs[currentSong];
+            if (!isplaying) audio.play();
+        });
+        function toggleMusic() {
+            if (!isplaying) {
+                audio.play();
+                document.getElementById('play-btn').textContent = 'Pause Music';
+            } else {
+                audio.pause();
+                document.getElementById('play-btn').textContent = 'Play Music';
+            }
+            isplaying = !isplaying;
+        }
+    </script>
+</body>
+</html>
